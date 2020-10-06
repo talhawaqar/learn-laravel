@@ -30,7 +30,9 @@ Route::view('welcome2', 'welcome', ['name' => 'Talha Waqar']);
 Route::get('we/{name?}', [WelcomeController::class, 'welcome']);
 Route::get('goodbye/{name?}', [WelcomeController::class, 'goodbye']);
 
-Route::resource('posts', 'PostController');
+
+
+Route::resource('post', 'App\Http\Controllers\PostController');
 
 // Route::get('/', function () {
 //   return view('welcome');
